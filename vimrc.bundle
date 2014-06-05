@@ -43,7 +43,9 @@ NeoBundle 'Shougo/vimproc', {
   \ }
 
 NeoBundle 'scrooloose/nerdtree'
-
+NeoBundle 'scrooloose/nerdcommenter.git'
+NeoBundle 'jszakmeister/vim-togglecursor'
+" }}}
 
 " Syntax {{{
 " Scala
