@@ -51,6 +51,10 @@ NeoBundle 'scrooloose/nerdcommenter.git'
 NeoBundle 'derekwyatt/vim-scala'
 
 NeoBundle 'kana/vim-smartinput'
+
+NeoBundle 'digitaltoad/vim-jade'
+
+NeoBundle 'groenewege/vim-less'
 " }}}
 
 " Color Scheme {{{
