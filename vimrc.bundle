@@ -55,6 +55,8 @@ NeoBundle 'kana/vim-smartinput'
 NeoBundle 'digitaltoad/vim-jade'
 
 NeoBundle 'groenewege/vim-less'
+
+NeoBundle "mattn/emmet-vim"
 " }}}
 
 " Color Scheme {{{
