@@ -28,6 +28,7 @@ NeoBundle 'kana/vim-smartinput'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'terryma/vim-multiple-cursors'
 " }}}
 
 " Utility {{{
