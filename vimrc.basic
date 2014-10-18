@@ -19,7 +19,7 @@ set scrolloff=10
 set cursorline
 set showtabline=2
 set mouse=a
-
+set colorcolumn=80
 
 " detect file type
 filetype plugin on
@@ -37,3 +37,5 @@ set listchars=tab:⇥\ ,trail:·,extends:⋯,precedes:⋯,nbsp:~"
 let g:lasttab = 1
 nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
 au TabLeave * let g:lasttab = tabpagenr()
+
+nnoremap <leader>r :!%:p<Enter>

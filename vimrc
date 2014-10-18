@@ -14,3 +14,5 @@ source $HOME/dotfiles/vimrc.nerdtree
 
 source $HOME/dotfiles/vimrc.plugins
 
+source $HOME/dotfiles/vimrc.maps
+

@@ -49,3 +49,4 @@ if neobundle#is_installed('neosnippet.vim')
 endif
 " }}}
 
+let jshint2_save = 1

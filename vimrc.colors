@@ -1,6 +1,8 @@
 " colors
 
 colorscheme monokai
+set background=light
+let g:solarized_termcolors=256
 
 let g:molokai_original = 1
 
