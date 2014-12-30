@@ -3,7 +3,7 @@
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
+  call neobundle#begin(expand('~/.vim/bundle/'))
 endif
 
 " Let NeoBundle manage NeoBundle
@@ -34,6 +34,7 @@ NeoBundle 'wting/rust.vim'
 
 " Utility {{{
 NeoBundle 'Shougo/vimshell.git'
+NeoBundle 'Shougo/vimfiler.git'
 
 NeoBundle 'Shougo/vimproc', {
   \ 'build' : {
@@ -45,6 +46,7 @@ NeoBundle 'Shougo/vimproc', {
   \ }
 
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'scrooloose/nerdcommenter.git'
 NeoBundle 'Shutnik/jshint2.vim'
 " }}}
@@ -60,15 +62,20 @@ NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'groenewege/vim-less'
 
 NeoBundle "mattn/emmet-vim"
+
+NeoBundle 'jelera/vim-javascript-syntax'
 " }}}
 
 " Color Scheme {{{
 " color schema 256
 " NeoBundle 'tomasr/molokai'
 " NeoBundle 'jaromero/vim-monokai-refined'
+NeoBundle 'godlygeek/csapprox'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'sickill/vim-monokai'
 NeoBundle 'vim-scripts/summerfruit256.vim'
+NeoBundle 'yearofmoo/Vim-Darkmate'
+
 " }}}
 
 " airline for vim

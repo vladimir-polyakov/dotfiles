@@ -1,12 +1,12 @@
 set laststatus=2
 
-let g:airline_theme='understated'
+let g:airline_theme='jellybeans'
 
 " Set custom left separator
-let g:airline_left_sep = '▶'
+let g:airline_left_sep = ''
 
 " " Set custom right separator
-let g:airline_right_sep = '◀'
+let g:airline_right_sep = ''
 
 " " Enable airline for tab-bar
 let g:airline#extensions#tabline#enabled = 1
@@ -22,3 +22,17 @@ let g:airline_section_y = ''
 
 " " Don't display filetype
 let g:airline_section_x = ''
+
+let g:airline_mode_map = {
+    \ '__' : '-',
+    \ 'n'  : 'N',
+    \ 'i'  : 'I',
+    \ 'R'  : 'R',
+    \ 'c'  : 'C',
+    \ 'v'  : 'V',
+    \ 'V'  : 'VL',
+    \ '' : 'VB',
+    \ 's'  : 'S',
+    \ 'S'  : 'S',
+    \ '' : 'S',
+    \ }
