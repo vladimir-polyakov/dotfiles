@@ -7,6 +7,7 @@ let NERDTreeMinimalUI=1
 "
 " Display current file in the NERDTree ont the left
 nmap <silent> <leader>f :NERDTreeTabsToggle<CR>
+nmap <silent> <leader>w :NERDTreeTabsFind<CR>
 
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 
