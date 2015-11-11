@@ -1,7 +1,7 @@
 " colors
 
-colorscheme monokai
-set background=light
+colorscheme atom-dark
+set background=dark
 let g:molokai_original = 1
 
 if &term =~ "xterm-256color" || "screen-256color"
