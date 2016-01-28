@@ -15,13 +15,13 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
 
 " " Display only filename in tab
-let g:airline#extensions#tabline#fnamemod = ':t'
+"let g:airline#extensions#tabline#fnamemod = ':t'
 
 " " Don't display encoding
-let g:airline_section_y = ''
+"let g:airline_section_y = ''
 
 " " Don't display filetype
-let g:airline_section_x = ''
+"let g:airline_section_x = ''
 
 let g:airline_mode_map = {
     \ '__' : '-',
@@ -36,3 +36,4 @@ let g:airline_mode_map = {
     \ 'S'  : 'S',
     \ '' : 'S',
     \ }
+

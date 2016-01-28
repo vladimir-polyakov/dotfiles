@@ -25,4 +25,8 @@ alias l='ls'
 alias ll='ls -la'
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
 PATH=$PATH:./node_modules/.bin
+PATH=$PATH:/opt/cprocsp/bin
+
+alias muse24='killall mongod && m use 2.4.14 --nojournal --dbpath /usr/local/var/mongodb-2.4 --fork --logpath /usr/local/var/log/mongodb-2.4/mongo.log'
+alias muse26='killall mongod && m use 2.6.9 --nojournal --dbpath /usr/local/var/mongodb-2.6 --fork --logpath /usr/local/var/log/mongodb-2.6/mongo.log'
 
