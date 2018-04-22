@@ -1,7 +1,5 @@
 set laststatus=2
 
-let g:airline_theme='jellybeans'
-
 " Set custom left separator
 let g:airline_left_sep = ''
 
@@ -18,7 +16,7 @@ let g:airline#extensions#tabline#show_buffers = 0
 "let g:airline#extensions#tabline#fnamemod = ':t'
 
 " " Don't display encoding
-"let g:airline_section_y = ''
+let g:airline_section_y = ''
 
 " " Don't display filetype
 "let g:airline_section_x = ''
