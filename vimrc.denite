@@ -6,3 +6,4 @@ nnoremap <silent> [denite]y :<C-u>Denite -buffer-name=yanks history/yank<cr>
 nnoremap <silent> [denite]l :<C-u>Denite -auto-resize -buffer-name=line line<cr>
 nnoremap <silent> [denite]/ :<C-u>Denite -no-quit -buffer-name=search grep:.<cr>
 nnoremap <silent> [denite]m :<C-u>Denite -auto-resize -buffer-name=mappings mapping<cr>
+
