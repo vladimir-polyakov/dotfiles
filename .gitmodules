@@ -22,3 +22,6 @@
 [submodule "vim/pack/plugins/denite.nvim"]
 	path = vim/pack/plugins/start/denite
 	url = git@github.com:Shougo/denite.nvim.git
+[submodule "vim/pack/plugins/start/syntastic"]
+	path = vim/pack/plugins/start/syntastic
+	url = git@github.com:vim-syntastic/syntastic.git

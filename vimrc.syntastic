@@ -1,0 +1,22 @@
+" syntastic
+
+" enable autochecks
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_enable_signs=1
+
+function! StrTrim(txt)
+  return substitute(a:txt, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+endfunction
+
+let g:syntastic_javascript_eslint_exec = StrTrim(system('npm-which eslint'))
+
+" open quicfix window with all error found
+nmap <silent> <leader>ll :lopen<cr>
+
+let g:syntastic_javascript_checkers = ['eslint']
+
+let g:syntastic_less_stylelint_exec = StrTrim(system('npm-which stylelint'))
+let g:syntastic_less_checkers = ['stylelint']
+
