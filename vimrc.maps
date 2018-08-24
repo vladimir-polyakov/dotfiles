@@ -1,3 +1,10 @@
 nnoremap <leader>r :!%:p<Enter>
 nmap cp :let @+ = expand("%") . "\n" <Enter>
 
+nnoremap <tab> gt
+
+" Last tab by leader tl
+let g:lasttab = 1
+nmap <S-tab> :exe "tabn ".g:lasttab<CR>
+au TabLeave * let g:lasttab = tabpagenr()
+
