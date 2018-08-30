@@ -37,3 +37,6 @@
 [submodule "vim/pack/plugins/start/vim-pug"]
 	path = vim/pack/plugins/start/vim-pug
 	url = git://github.com/digitaltoad/vim-pug.git
+[submodule "vim/pack/plugins/start/vim-raml"]
+	path = vim/pack/plugins/start/vim-raml
+	url = https://github.com/IN3D/vim-raml.git
