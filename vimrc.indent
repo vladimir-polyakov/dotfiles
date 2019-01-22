@@ -1,11 +1,9 @@
 " indentationn
 
-" tab key inserts whitespaces
-set expandtab
-
 set autoindent    " automatically indent
 set smartindent   " use the same amount of indentation from the prev line
 set cindent       " for C language
+
 set noexpandtab
 
 set tabstop=2 shiftwidth=2 softtabstop=0

@@ -40,3 +40,6 @@
 [submodule "vim/pack/plugins/start/vim-raml"]
 	path = vim/pack/plugins/start/vim-raml
 	url = https://github.com/IN3D/vim-raml.git
+[submodule "vim/pack/plugins/start/Jenkinsfile-vim-syntax"]
+	path = vim/pack/plugins/start/Jenkinsfile-vim-syntax
+	url = git@github.com:martinda/Jenkinsfile-vim-syntax.git
