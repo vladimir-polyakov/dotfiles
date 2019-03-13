@@ -1,14 +1,15 @@
 nnoremap <leader>r :!%:p<Enter>
 nmap cp :let @+ = expand("%") . "\n" <Enter>
 
-nnoremap <tab> gt
-nnoremap <S-tab> gT
-nnoremap gf :vertical wincmd f<CR>
-
 " Last tab by Shift-tab
 let g:lasttab = 1
 nnoremap <A> :exe "tabn ".g:lasttab<CR>
 au TabLeave * let g:lasttab = tabpagenr()
 
-map <leader>cc :s/^/\/\//g<CR>:let @/ = ""<CR>
-map <leader>cu :s/^\/\///g<CR>:let @/ = ""<CR>
+nmap <silent> <leader>f :Dirvish<CR>
+nmap <silent> <leader>F :Dirvish %<CR>
+nmap _ 20<C-w><
+nmap + 20<C-w>>
+
+nnoremap <leader>b :buffer <Tab><S-Tab>
+nnoremap <leader>B :sbuffer <Tab>

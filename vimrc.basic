@@ -20,8 +20,8 @@ set cursorline
 set showtabline=2
 set mouse=a
 set colorcolumn=80
-set splitbelow
 set splitright
+set splitbelow
 set hls
 
 " detect file type
@@ -46,18 +46,7 @@ let html_no_rendering=1 " Don't render italic, bold, links in HTML
 
 set rtp+=~/.fzf
 
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 25
-nmap <silent> <leader>f :Vexplore<CR>
-
-nmap _ 20<C-w><
-nmap + 20<C-w>>
+let g:dirvish_mode = ':sort ,^.*[\/],'
 
 set wildmenu
 set wildcharm=<Tab>
-
-nnoremap <leader>b :buffer <Tab>
-nnoremap <leader>B :sbuffer <Tab>

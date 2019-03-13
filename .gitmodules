@@ -43,3 +43,6 @@
 [submodule "vim/pack/plugins/start/Jenkinsfile-vim-syntax"]
 	path = vim/pack/plugins/start/Jenkinsfile-vim-syntax
 	url = git@github.com:martinda/Jenkinsfile-vim-syntax.git
+[submodule "vim/pack/plugins/start/vim-dirvish"]
+	path = vim/pack/plugins/start/vim-dirvish
+	url = git@github.com:justinmk/vim-dirvish.git
