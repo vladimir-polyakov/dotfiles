@@ -13,9 +13,6 @@
 [submodule "vim/pack/plugins/start/vim-less"]
 	path = vim/pack/plugins/start/vim-less
 	url = git@github.com:groenewege/vim-less.git
-[submodule "vim/pack/plugins/start/vim-airline"]
-	path = vim/pack/plugins/start/vim-airline
-	url = git@github.com:vim-airline/vim-airline.git
 [submodule "vim/pack/plugins/start/vim-nerdtree-tabs"]
 	path = vim/pack/plugins/start/vim-nerdtree-tabs
 	url = git@github.com:jistr/vim-nerdtree-tabs.git
@@ -46,3 +43,6 @@
 [submodule "vim/pack/plugins/start/vim-dirvish"]
 	path = vim/pack/plugins/start/vim-dirvish
 	url = git@github.com:justinmk/vim-dirvish.git
+[submodule "vim/pack/plugins/start/ale"]
+	path = vim/pack/plugins/start/ale
+	url = git@github.com:dense-analysis/ale.git
