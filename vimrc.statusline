@@ -1,37 +1,21 @@
-set laststatus=2
+function! GitBranch()
+  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+endfunction
 
-" Set custom left separator
-let g:airline_left_sep = ''
+function! StatuslineGit()
+  let l:branchname = GitBranch()
+  return strlen(l:branchname) > 0?'  '.l:branchname.'  ':''
+endfunction
 
-" " Set custom right separator
-let g:airline_right_sep = ''
-
-" " Enable airline for tab-bar
-let g:airline#extensions#tabline#enabled = 1
-
-" " Don't display buffers in tab-bar with single tab
-let g:airline#extensions#tabline#show_buffers = 0
-
-" " Display only filename in tab
-"let g:airline#extensions#tabline#fnamemod = ':t'
-
-" " Don't display encoding
-let g:airline_section_y = ''
-
-" " Don't display filetype
-"let g:airline_section_x = ''
-
-let g:airline_mode_map = {
-    \ '__' : '-',
-    \ 'n'  : 'N',
-    \ 'i'  : 'I',
-    \ 'R'  : 'R',
-    \ 'c'  : 'C',
-    \ 'v'  : 'V',
-    \ 'V'  : 'VL',
-    \ '' : 'VB',
-    \ 's'  : 'S',
-    \ 'S'  : 'S',
-    \ '' : 'S',
-    \ }
-
+set statusline=
+set statusline+=%m
+set statusline+=\%{expand('%:~:.')}
+set statusline+=%=
+set statusline+=%#CursorColumn#
+set statusline+=\ 
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\ 
+set statusline+=\ 
+set statusline+=%#PmenuSel#
+set statusline+=%{StatuslineGit()}
