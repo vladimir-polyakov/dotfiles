@@ -50,3 +50,5 @@ let g:dirvish_mode = ':sort ,^.*[\/],'
 
 set wildmenu
 set wildcharm=<Tab>
+
+set path+=node_modules

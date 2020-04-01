@@ -14,3 +14,5 @@ nmap + 20<C-w>>
 nnoremap <leader>b :buffer <Tab><S-Tab>
 nnoremap <leader>B :sbuffer <Tab>
 vnoremap // y/<C-R>"<CR>
+
+set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
