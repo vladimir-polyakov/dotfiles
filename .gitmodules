@@ -40,3 +40,6 @@
 [submodule "vim/pack/plugins/start/typescript-vim"]
 	path = vim/pack/plugins/start/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "vim/pack/plugins/start/vim-gutentags"]
+	path = vim/pack/plugins/start/vim-gutentags
+	url = git@github.com:ludovicchabant/vim-gutentags.git
