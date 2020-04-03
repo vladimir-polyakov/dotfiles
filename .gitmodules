@@ -37,3 +37,6 @@
 [submodule "vim/pack/plugins/start/fzf"]
 	path = vim/pack/plugins/start/fzf
 	url = git@github.com:junegunn/fzf.vim.git
+[submodule "vim/pack/plugins/start/typescript-vim"]
+	path = vim/pack/plugins/start/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
