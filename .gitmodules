@@ -10,9 +10,6 @@
 [submodule "vim/pack/plugins/start/vim-less"]
 	path = vim/pack/plugins/start/vim-less
 	url = git@github.com:groenewege/vim-less.git
-[submodule "vim/pack/plugins/start/syntastic"]
-	path = vim/pack/plugins/start/syntastic
-	url = git@github.com:vim-syntastic/syntastic.git
 [submodule "vim/pack/plugins/start/vim-jsx"]
 	path = vim/pack/plugins/start/vim-jsx
 	url = git@github.com:mxw/vim-jsx.git
