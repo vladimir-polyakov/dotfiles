@@ -11,5 +11,5 @@
 
 ## Fonts
 
-* DejaVu Sans Mono
+* Monaco
 
