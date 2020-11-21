@@ -1,7 +1,7 @@
 "basic setups
 
 set nocompatible
-set hidden			" allow editing multiple files
+set hidden
 set nobackup
 set autoread
 set noswapfile
@@ -52,3 +52,4 @@ set wildmenu
 set wildcharm=<Tab>
 
 set path+=node_modules
+set clipboard+=unnamedplus
