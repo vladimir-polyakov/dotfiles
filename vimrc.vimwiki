@@ -1,0 +1,1 @@
+let g:vimwiki_list = [{'path': '~/Dropbox/notes', 'path_html': '~/Dropbox/notes_html', 'ext': '.md', 'syntax': 'markdown'}]
