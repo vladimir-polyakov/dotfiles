@@ -22,6 +22,8 @@ set splitright
 set splitbelow
 set hls
 
+let g:dirvish_mode = ':sort ,^.*[\/],'
+
 " detect file type
 filetype plugin on
 
