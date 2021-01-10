@@ -1,5 +1,3 @@
-"basic setups
-
 set nocompatible
 set hidden
 set nobackup
@@ -30,10 +28,8 @@ filetype plugin on
 " *.md is markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
-" Enable display whitespace characters
+" Enable display whitespace characters and setup how to display them
 set list
-
-" Setting up how to display whitespace characters
 set listchars=tab:⇥\ ,trail:·,extends:⋯,precedes:⋯,nbsp:~"
 
 let loaded_matchparen=1 " Don't load matchit.vim (paren/bracket matching)
@@ -44,12 +40,9 @@ set lazyredraw          " Wait to redraw
 set scrolljump=8        " Scroll 8 lines at a time at bottom/top
 let html_no_rendering=1 " Don't render italic, bold, links in HTML
 
-set rtp+=~/.fzf
-
-let g:dirvish_mode = ':sort ,^.*[\/],'
-
 set wildmenu
 set wildcharm=<Tab>
 
+set rtp+=~/.fzf
 set path+=node_modules
 set clipboard+=unnamedplus

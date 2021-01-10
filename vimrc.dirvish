@@ -1,3 +1,5 @@
+let g:dirvish_mode = ':sort ,^.*[\/],'
+
 augroup dirvish_config
   autocmd!
   autocmd FileType dirvish
