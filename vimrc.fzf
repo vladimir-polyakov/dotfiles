@@ -1,4 +1,5 @@
-nmap <space>f :FZF<CR>
-nmap <space>t :Tags<CR>
-nmap <space>l :Lines<CR>
-nmap <space>h :History<CR>
+nnoremap <space>f :FZF<CR>
+nnoremap <space>t :Tags<CR>
+nnoremap <space>l :Lines<CR>
+nnoremap <space>h :History<CR>
+nnoremap <space>b :Buffers<CR>
