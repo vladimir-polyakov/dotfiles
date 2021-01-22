@@ -49,3 +49,9 @@
 [submodule "vim/pack/plugins/start/vim-one"]
 	path = vim/pack/plugins/start/vim-one
 	url = git@github.com:rakr/vim-one.git
+[submodule "vim/pack/plugins/start/ultisnips"]
+	path = vim/pack/plugins/start/ultisnips
+	url = git@github.com:SirVer/ultisnips.git
+[submodule "vim/pack/plugins/start/vim-snippets"]
+	path = vim/pack/plugins/start/vim-snippets
+	url = git@github.com:honza/vim-snippets.git
