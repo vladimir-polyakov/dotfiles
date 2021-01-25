@@ -5,8 +5,11 @@ nnoremap cp :let @+ = expand("%") . "\n" <Enter>
 
 inoremap jk <esc>
 
+" More naturally working with splits
 nnoremap _ 20<C-w><
 nnoremap + 20<C-w>>
+nnoremap <C-s> <C-w><C-w>
+
 
 " Use Ctrl-j to move line up and Ctrl-k to move down, works with selection as
 " well
@@ -16,6 +19,7 @@ inoremap <C-j> <Esc>:m .+1<CR>==gi
 inoremap <C-k> <Esc>:m .-2<CR>==gi
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
+
 
 " Open vimrc to config
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
