@@ -10,7 +10,6 @@ nnoremap _ 20<C-w><
 nnoremap + 20<C-w>>
 nnoremap <C-s> <C-w><C-w>
 
-
 " Use Ctrl-j to move line up and Ctrl-k to move down, works with selection as
 " well
 nnoremap <C-j> :m .+1<CR>==
