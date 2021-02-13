@@ -10,6 +10,12 @@
 * wl-clipboard
 * vim 8+ or nvim
 
+For use with sway
+* sway
+* grim
+* slurp
+* font-awesome
+
 ## Fonts
 
 * JetBrainsMono
