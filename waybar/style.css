@@ -33,7 +33,7 @@ window#waybar {
 	margin-left: 15px;
 }
 
-#mode, #clock, #battery, #network, #pulseaudio {
+#mode, #clock, #battery, #network, #pulseaudio, #tray {
 	padding: 0 10px;
 }
 

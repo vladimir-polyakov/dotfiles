@@ -1,7 +1,7 @@
 {
 	"modules-left": ["sway/workspaces", "sway/media", "sway/window"],
 	"modules-center": ["clock"],
-	"modules-right": ["sway/mode", "sway/language", "battery", "network", "pulseaudio"],
+	"modules-right": ["sway/mode", "sway/language", "battery", "tray", "pulseaudio"],
 	"height": 30,
 	"sway/window": {
 		"max-length": 50
@@ -32,8 +32,8 @@
 		}
 	},
 	"pulseaudio": {
-		"format": "{volume}% {icon}",
-		"format-bluetooth": "{volume}% {icon}",
+		"format": "{volume}%   {icon}",
+		"format-bluetooth": "{volume}%   {icon}",
 		"format-muted": "",
 		"format-icons": {
 			"headphone": "",

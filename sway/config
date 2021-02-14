@@ -168,4 +168,7 @@ bar {
 	swaybar_command waybar
 }
 
+exec mako
+exec nm-applet --indicator
+
 include /etc/sway/config.d/*

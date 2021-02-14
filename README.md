@@ -14,7 +14,9 @@ For use with sway
 * sway
 * grim
 * slurp
+* mako
 * font-awesome
+* network-manager-applet
 
 ## Fonts
 
