@@ -1,4 +1,9 @@
-nmap <space>f :FZF<CR>
-nmap <space>t :Tags<CR>
-nmap <space>l :Lines<CR>
-nmap <space>h :History<CR>
+command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, fzf#vim#with_preview({'options': '--delimiter : --nth 3..'}), <bang>0)
+
+nnoremap <space>f :FZF<CR>
+nnoremap <space>t :Tags<CR>
+nnoremap <space>l :BLines<CR>
+nnoremap <space>L :Lines<CR>
+nnoremap <space>h :History<CR>
+nnoremap <space>b :Buffers<CR>
+nnoremap <space>/ :Ag<CR>

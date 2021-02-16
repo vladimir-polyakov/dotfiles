@@ -27,9 +27,6 @@ let g:dirvish_mode = ':sort ,^.*[\/],'
 " detect file type
 filetype plugin on
 
-" *.md is markdown
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
-
 " Enable display whitespace characters and setup how to display them
 set list
 set listchars=tab:⇥\ ,trail:·,extends:⋯,precedes:⋯,nbsp:~"

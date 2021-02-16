@@ -99,5 +99,5 @@ colors:
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
-  program: /bin/tmux
+  program: /bin/zsh
 
