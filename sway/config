@@ -8,10 +8,10 @@ set $right l
 
 set $term alacritty
 
-set $menu bemenu-run | xargs swaymsg exec --
+set $menu ulauncher
 
 ### Output configuration
-output * bg /home/nordberg/wallpaper.png fill
+output * bg ~/wallpaper.png fill
 
 default_border none
 default_floating_border none
