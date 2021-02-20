@@ -13,6 +13,8 @@ set $menu ulauncher
 ### Output configuration
 output * bg ~/wallpaper.png fill
 
+hide_edge_borders smart
+
 default_border none
 default_floating_border none
 
@@ -47,6 +49,14 @@ bindsym $mod+Shift+c reload
 
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+
+bindsym $mod+End exec swaylock
+
+exec swayidle -w \
+	timeout 300 'swaylock' \
+	timeout 600 'swaymsg "output * dpms off"' \
+	resume 'swaymsg "output * dpms on"' \
+	before-sleep 'swaylock'
 
 # Move your focus around
 bindsym $mod+$left focus left

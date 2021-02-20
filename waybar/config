@@ -1,6 +1,6 @@
 {
 	"modules-left": ["sway/workspaces", "sway/media", "sway/window"],
-	"modules-center": ["clock"],
+	"modules-center": ["clock", "weather"],
 	"modules-right": ["sway/mode", "sway/language", "battery", "tray", "pulseaudio"],
 	"height": 30,
 	"sway/window": {
@@ -24,8 +24,8 @@
 			"1": "",
 			"2": "",
 			"3": "",
-			"4": "",
-			"5": "",
+			"4": "",
+			"5": "",
 			"urgent": "",
 			"focused": "",
 			"default": ""
