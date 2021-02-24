@@ -12,6 +12,9 @@
 
 For use with sway
 * sway
+* swayidle
+* swaylock
+* waybar
 * grim
 * slurp
 * mako
