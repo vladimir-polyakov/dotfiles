@@ -58,3 +58,6 @@
 [submodule "vim/pack/plugins/start/editorconfig-vim"]
 	path = vim/pack/plugins/start/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
+[submodule "vim/pack/plugins/start/goyo.vim"]
+	path = vim/pack/plugins/start/goyo.vim
+	url = git@github.com:junegunn/goyo.vim.git
