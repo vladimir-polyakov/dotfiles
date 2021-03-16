@@ -7,8 +7,7 @@ set $up k
 set $right l
 
 set $term alacritty
-
-set $menu ulauncher
+set $menu bemenu-run --fn "JetBrains Mono" -p '>' | xargs swaymsg exec
 
 ### Output configuration
 output * bg ~/wallpaper.png fill
@@ -180,5 +179,8 @@ bar {
 
 exec mako
 exec nm-applet --indicator
+exec gammastep-indicator
+exec dropbox start
+exec --no-startup-id python /usr/share/sway/scripts/inactive-windows-transparency.py -o 0.95
 
 include /etc/sway/config.d/*
