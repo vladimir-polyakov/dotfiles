@@ -9,6 +9,7 @@ set noshowmode
 set modelines=0
 set notitle
 set number
+set relativenumber
 set nowrap
 set colorcolumn=+1
 set autoread

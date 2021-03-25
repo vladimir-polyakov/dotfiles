@@ -35,3 +35,4 @@ PATH=$PATH:./node_modules/.bin
 
 alias vim="nvim"
 alias vi="nvim"
+alias kubectl="minikube kubectl --"
