@@ -61,3 +61,12 @@
 [submodule "vim/pack/plugins/start/goyo.vim"]
 	path = vim/pack/plugins/start/goyo.vim
 	url = git@github.com:junegunn/goyo.vim.git
+[submodule "vim/pack/plugins/start/vim-easymotion"]
+	path = vim/pack/plugins/start/vim-easymotion
+	url = git@github.com:easymotion/vim-easymotion.git
+[submodule "vim/vim/pack/local/start/editorconfig-vim"]
+	path = vim/vim/pack/local/start/editorconfig-vim
+	url = git@github.com:editorconfig/editorconfig-vim.git
+[submodule "vim/pack/local/start/editorconfig-vim"]
+	path = vim/pack/local/start/editorconfig-vim
+	url = git@github.com:editorconfig/editorconfig-vim.git
