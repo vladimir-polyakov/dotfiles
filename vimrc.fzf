@@ -4,6 +4,22 @@ command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, fzf#vim#with_preview({'opti
 
 command! -bang -nargs=? -complete=dir Files call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
+" Sending results to quickfix https://github.com/junegunn/fzf.vim/issues/185#issuecomment-322120216
+"
+" CTRL-Q to build quickfix list
+
+function! s:build_quickfix_list(lines)
+  call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
+  copen
+  cc
+endfunction
+
+let g:fzf_action = {
+  \ 'ctrl-q': function('s:build_quickfix_list'),
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
 nnoremap <Space>f :Files<CR>
 nnoremap <Space>t :Tags<CR>
 nnoremap <Space>l :BLines<CR>

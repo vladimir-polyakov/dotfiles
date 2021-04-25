@@ -70,3 +70,9 @@
 [submodule "vim/pack/local/start/editorconfig-vim"]
 	path = vim/pack/local/start/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
+[submodule "vim/pack/plugins/start/QFEnter"]
+	path = vim/pack/plugins/start/QFEnter
+	url = git@github.com:yssl/QFEnter.git
+[submodule "vim/pack/plugins/start/vim-fugitive"]
+	path = vim/pack/plugins/start/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git

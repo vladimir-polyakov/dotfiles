@@ -1,0 +1,8 @@
+profile two-monitors {
+	output eDP-1 disable
+	output "Iiyama North America PL2792Q 1152100302038" mode 2560x1440 position 0,0
+}
+
+profile default {
+	output eDP-1 enable
+}
