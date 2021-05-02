@@ -1,0 +1,5 @@
+--exclude=.git
+--exclude=log
+--exclude=tmp
+--exclude=node_modules
+--exclude=coverage
