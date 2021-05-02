@@ -201,4 +201,7 @@ exec --no-startup-id python /usr/share/sway/scripts/inactive-windows-transparenc
 exec systemctl --user import-environment
 exec kanshi
 
+for_window [app_id="Thunar"] floating enable
+for_window [title="Firefox .* Sharing Indicator"] kill
+
 include /etc/sway/config.d/*
