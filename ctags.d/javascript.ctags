@@ -3,3 +3,5 @@
 --exclude=tmp
 --exclude=node_modules
 --exclude=coverage
+--exclude=package-lock.json
+--exclude=package.json
