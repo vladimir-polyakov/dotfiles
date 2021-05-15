@@ -5,7 +5,7 @@
 * ctags
 * fzf
 * zsh
-* ag
+* the_silver_searcher
 * zsh-pure
 * wl-clipboard
 * vim 8+ or nvim
@@ -20,6 +20,7 @@ For use with sway
 * mako
 * font-awesome
 * network-manager-applet
+* gammastep (and python-gobject)
 
 ## Fonts
 

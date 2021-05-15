@@ -38,4 +38,4 @@ alias vi="nvim"
 alias kubectl="minikube kubectl --"
 alias virtual-screen-recorder="wf-recorder --muxer=v4l2 --codec=rawvideo --pixel-format=yuv420p --file=/dev/video2"
 
-source /etc/bash_completion.d/*
+[ -s "/etc/bash_completion.d/" ] && source /etc/bash_completion.d/*

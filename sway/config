@@ -165,7 +165,7 @@ bindsym $mod+r mode "resize"
 
 # Lock, suspend, shutdown
 # heavily inspired by https://gist.github.com/tuxPT/467f8ae7d15fcc1b67683df36c4b535a
-set $locker swaylock
+set $locker swaylock --screenshots --clock --indicator --effect-blur 7x5 --effect-vignette 0.5:0.5 --grace 2 --fade-in 0.2
 
 exec swayidle -w \
 	timeout 300 $locker \

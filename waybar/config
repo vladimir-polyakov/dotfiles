@@ -1,7 +1,7 @@
 {
 	"modules-left": ["sway/workspaces", "sway/media", "sway/window"],
 	"modules-center": ["clock", "weather"],
-	"modules-right": ["sway/mode", "sway/language", "battery", "tray", "pulseaudio"],
+	"modules-right": ["sway/mode", "sway/language", "battery", "tray", "pulseaudio", "custom/whoami"],
 	"height": 30,
 	"sway/window": {
 		"max-length": 50
@@ -44,5 +44,9 @@
 		},
 		"scroll-step": 1,
 		"on-click": "pavucontrol"
+	},
+	"custom/whoami": {
+		"format": "  {}  ",
+		"exec": "whoami",
 	}
 }
