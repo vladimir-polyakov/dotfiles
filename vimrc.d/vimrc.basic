@@ -43,6 +43,7 @@ let html_no_rendering=1 " Don't render italic, bold, links in HTML
 set wildmenu
 set wildcharm=<Tab>
 
-set rtp+=~/.fzf
+let g:gutentags_ctags_executable="/opt/homebrew/bin/ctags"
+set rtp+=/opt/homebrew/opt/fzf
 set path+=node_modules
 set clipboard+=unnamedplus

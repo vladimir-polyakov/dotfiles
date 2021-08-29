@@ -1,3 +1,5 @@
+set rtp+=/opt/homebrew/bin/fzf
+
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 
 command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, fzf#vim#with_preview({'options': '--delimiter : --nth 3..'}), <bang>0)

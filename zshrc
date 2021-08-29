@@ -31,7 +31,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-PATH=$PATH:./node_modules/.bin
+PATH=$PATH:/opt/homebrew/bin/:./node_modules/.bin
 
 alias vim="nvim"
 alias vi="nvim"
@@ -39,3 +39,5 @@ alias kubectl="minikube kubectl --"
 alias virtual-screen-recorder="wf-recorder --muxer=v4l2 --codec=rawvideo --pixel-format=yuv420p --file=/dev/video2"
 
 [ -s "/etc/bash_completion.d/" ] && source /etc/bash_completion.d/*
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
