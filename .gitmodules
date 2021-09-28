@@ -7,15 +7,9 @@
 [submodule "vim/pack/plugins/start/vim-less"]
 	path = vim/pack/plugins/start/vim-less
 	url = git@github.com:groenewege/vim-less.git
-[submodule "vim/pack/plugins/start/vim-jsx"]
-	path = vim/pack/plugins/start/vim-jsx
-	url = git@github.com:mxw/vim-jsx.git
 [submodule "vim/pack/plugins/start/nerdcommenter"]
 	path = vim/pack/plugins/start/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter
-[submodule "vim/pack/plugins/start/vim-pug"]
-	path = vim/pack/plugins/start/vim-pug
-	url = git://github.com/digitaltoad/vim-pug.git
 [submodule "vim/pack/plugins/start/vim-dirvish"]
 	path = vim/pack/plugins/start/vim-dirvish
 	url = git@github.com:justinmk/vim-dirvish.git
@@ -31,9 +25,6 @@
 [submodule "vim/pack/plugins/start/vim-gutentags"]
 	path = vim/pack/plugins/start/vim-gutentags
 	url = git@github.com:ludovicchabant/vim-gutentags.git
-[submodule "vim/pack/plugins/start/vimwiki"]
-	path = vim/pack/plugins/start/vimwiki
-	url = git@github.com:vimwiki/vimwiki.git
 [submodule "vim/pack/plugins/start/vim-go"]
 	path = vim/pack/plugins/start/vim-go
 	url = git@github.com:fatih/vim-go.git
@@ -52,9 +43,6 @@
 [submodule "vim/pack/plugins/start/goyo.vim"]
 	path = vim/pack/plugins/start/goyo.vim
 	url = git@github.com:junegunn/goyo.vim.git
-[submodule "vim/pack/plugins/start/vim-easymotion"]
-	path = vim/pack/plugins/start/vim-easymotion
-	url = git@github.com:easymotion/vim-easymotion.git
 [submodule "vim/vim/pack/local/start/editorconfig-vim"]
 	path = vim/vim/pack/local/start/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
