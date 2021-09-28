@@ -6,4 +6,3 @@ source $HOME/dotfiles/vimrc.d/vimrc.fzf
 source $HOME/dotfiles/vimrc.d/vimrc.indent
 source $HOME/dotfiles/vimrc.d/vimrc.maps
 source $HOME/dotfiles/vimrc.d/vimrc.statusline
-source $HOME/dotfiles/vimrc.d/vimrc.vimwiki
