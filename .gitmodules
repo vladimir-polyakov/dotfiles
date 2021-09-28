@@ -13,9 +13,6 @@
 [submodule "vim/pack/plugins/start/vim-jsx"]
 	path = vim/pack/plugins/start/vim-jsx
 	url = git@github.com:mxw/vim-jsx.git
-[submodule "vim/pack/plugins/start/vim-styled-components"]
-	path = vim/pack/plugins/start/vim-styled-components
-	url = git@github.com:styled-components/vim-styled-components.git
 [submodule "vim/pack/plugins/start/nerdcommenter"]
 	path = vim/pack/plugins/start/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter
