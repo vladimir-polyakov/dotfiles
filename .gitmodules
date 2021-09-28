@@ -4,9 +4,6 @@
 [submodule "vim/pack/plugins/start/vim-javascript-syntax"]
 	path = vim/pack/plugins/start/vim-javascript-syntax
 	url = git@github.com:jelera/vim-javascript-syntax.git
-[submodule "vim/pack/plugins/start/vim-atom-dark"]
-	path = vim/pack/plugins/start/vim-atom-dark
-	url = git@github.com:gosukiwi/vim-atom-dark.git
 [submodule "vim/pack/plugins/start/vim-less"]
 	path = vim/pack/plugins/start/vim-less
 	url = git@github.com:groenewege/vim-less.git
