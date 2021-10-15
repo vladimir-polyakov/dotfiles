@@ -31,7 +31,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-PATH=$PATH:/opt/homebrew/bin/:./node_modules/.bin
+PATH=$PATH:/opt/homebrew/bin/:./node_modules/.bin:/usr/local/bin
 
 alias vim="nvim"
 alias vi="nvim"
