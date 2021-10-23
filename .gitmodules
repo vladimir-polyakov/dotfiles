@@ -55,3 +55,6 @@
 [submodule "vim/pack/plugins/start/vim-fugitive"]
 	path = vim/pack/plugins/start/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
+[submodule "vim/pack/local/start/vim-tmux-navigator"]
+	path = vim/pack/local/start/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git
