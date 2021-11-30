@@ -44,6 +44,8 @@ set wildmenu
 set wildcharm=<Tab>
 
 let g:gutentags_ctags_executable="/opt/homebrew/bin/ctags"
+let g:tagbar_ctags_bin="/opt/homebrew/bin/ctags"
 set rtp+=/opt/homebrew/opt/fzf
 set path+=node_modules
 set clipboard+=unnamedplus
+

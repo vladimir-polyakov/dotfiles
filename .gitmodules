@@ -58,3 +58,6 @@
 [submodule "vim/pack/local/start/vim-tmux-navigator"]
 	path = vim/pack/local/start/vim-tmux-navigator
 	url = git@github.com:christoomey/vim-tmux-navigator.git
+[submodule "vim/pack/local/start/tagbar"]
+	path = vim/pack/local/start/tagbar
+	url = git@github.com:preservim/tagbar.git

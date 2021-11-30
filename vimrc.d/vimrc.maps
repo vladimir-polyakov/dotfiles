@@ -18,6 +18,9 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 nnoremap <expr> j v:count ? 'j' : 'gj'
 nnoremap <expr> k v:count ? 'k' : 'gk'
 
+" Open tagbar
+nnoremap <leader>t :Tagbar<cr>
+
 let g:tmux_navigator_no_mappings = 1
 
 nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
