@@ -4,9 +4,6 @@
 [submodule "vim/pack/plugins/start/vim-javascript-syntax"]
 	path = vim/pack/plugins/start/vim-javascript-syntax
 	url = git@github.com:jelera/vim-javascript-syntax.git
-[submodule "vim/pack/plugins/start/vim-less"]
-	path = vim/pack/plugins/start/vim-less
-	url = git@github.com:groenewege/vim-less.git
 [submodule "vim/pack/plugins/start/nerdcommenter"]
 	path = vim/pack/plugins/start/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter
@@ -31,21 +28,9 @@
 [submodule "vim/pack/plugins/start/vim-one"]
 	path = vim/pack/plugins/start/vim-one
 	url = git@github.com:rakr/vim-one.git
-[submodule "vim/pack/plugins/start/ultisnips"]
-	path = vim/pack/plugins/start/ultisnips
-	url = git@github.com:SirVer/ultisnips.git
-[submodule "vim/pack/plugins/start/vim-snippets"]
-	path = vim/pack/plugins/start/vim-snippets
-	url = git@github.com:honza/vim-snippets.git
 [submodule "vim/pack/plugins/start/editorconfig-vim"]
 	path = vim/pack/plugins/start/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
-[submodule "vim/pack/plugins/start/goyo.vim"]
-	path = vim/pack/plugins/start/goyo.vim
-	url = git@github.com:junegunn/goyo.vim.git
 [submodule "vim/vim/pack/local/start/editorconfig-vim"]
 	path = vim/vim/pack/local/start/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
-[submodule "vim/pack/plugins/start/QFEnter"]
-	path = vim/pack/plugins/start/QFEnter
-	url = git@github.com:yssl/QFEnter.git
