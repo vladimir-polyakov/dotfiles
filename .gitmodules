@@ -31,3 +31,6 @@
 [submodule "vim/vim/pack/local/start/editorconfig-vim"]
 	path = vim/vim/pack/local/start/editorconfig-vim
 	url = git@github.com:editorconfig/editorconfig-vim.git
+[submodule "vim/pack/plugins/start/vim-tmux-navigator.git"]
+	path = vim/pack/plugins/start/vim-tmux-navigator.git
+	url = git@github.com:christoomey/vim-tmux-navigator.git
