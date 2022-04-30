@@ -1,0 +1,11 @@
+require('plugins')
+require('bootstrap')
+require('mappings')
+require('statusline')
+
+require('plugins/fzf')
+require('plugins/nvim-treesitter')
+require('plugins/dirvish')
+require('plugins/nvim-lsp-installer')
+require('plugins/nvim-lsp')
+require('plugins/null-ls')
