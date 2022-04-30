@@ -1,1 +1,1 @@
-vim.g.dirvish_mode = ':sort ,^.*[/],'
+vim.g.dirvish_mode = ":sort ,^.*[/],"
