@@ -1,4 +1,3 @@
-
 let b:ale_enabled = 1
 let b:ale_completion_enabled = 0
 
