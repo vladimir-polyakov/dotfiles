@@ -22,6 +22,7 @@ return require("packer").startup(function(use)
 		"nvim-treesitter/nvim-treesitter",
 
 		"joshdick/onedark.vim",
+		"editorconfig/editorconfig-vim.git",
 
 		"christoomey/vim-tmux-navigator",
 	}

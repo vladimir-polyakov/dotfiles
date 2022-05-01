@@ -1,6 +1,0 @@
-[submodule "vim/pack/plugins/start/vim-javascript-syntax"]
-	path = vim/pack/plugins/start/vim-javascript-syntax
-	url = git@github.com:jelera/vim-javascript-syntax.git
-[submodule "vim/vim/pack/local/start/editorconfig-vim"]
-	path = vim/vim/pack/local/start/editorconfig-vim
-	url = git@github.com:editorconfig/editorconfig-vim.git
