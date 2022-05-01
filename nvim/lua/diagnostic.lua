@@ -1,7 +1,3 @@
-vim.diagnostic.config {
-	severity_sort = true
-}
-
 local ns = vim.api.nvim_create_namespace("severity_based_ns")
 
 for _, handler in pairs({"signs", "virtual_text", "underline"}) do
