@@ -1,4 +1,5 @@
 require("plugins")
+require("diagnostic")
 require("settings")
 require("mappings")
 require("statusline")
