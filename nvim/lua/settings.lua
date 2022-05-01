@@ -26,7 +26,6 @@ opt.wrap = false
 vim.cmd("colorscheme onedark")
 
 opt.background = "dark"
-opt.colorcolumn = "80"
 opt.cursorcolumn = false
 opt.cursorline = true
 opt.list = true

@@ -20,8 +20,8 @@ local on_attach = function(client, bufnr)
 	set("n", "<leader>e", vim.diagnostic.open_float, opts)
 end
 
--- Suppress diagnostics from LSP rely
-vim.lsp.handlers["textDocument/publishDiagnostics"] = function() end
+-- Suppress diagnostics from LSP reply
+--vim.lsp.handlers["textDocument/publishDiagnostics"] = function() end
 
 local servers = { "tsserver", "gopls" }
 for _, lsp in ipairs(servers) do
