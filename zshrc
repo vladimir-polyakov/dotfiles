@@ -26,18 +26,16 @@ bindkey '^f' history-beginning-search-forward-end
 
 alias l='ls'
 alias ll='ls -la'
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-PATH=$PATH:/opt/homebrew/bin/:./node_modules/.bin:/usr/local/bin:/usr/local/go/bin:~/go/bin
-
 alias vim="nvim"
 alias vi="nvim"
 alias kubectl="minikube kubectl --"
-alias virtual-screen-recorder="wf-recorder --muxer=v4l2 --codec=rawvideo --pixel-format=yuv420p --file=/dev/video2"
+setopt complete_aliases # https://unix.stackexchange.com/questions/250314/whats-the-intended-use-case-for-complete-aliases-in-zsh/250489#250489
 
-[ -s "/etc/bash_completion.d/" ] && source /etc/bash_completion.d/*
+export NVM_DIR="$HOME/.nvm"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+[ -s "/etc/bash_completion.d/" ] && for f in /etc/bash_completion.d/*; do \. $f; done
+[ -s "$HOME/.zsh_completion/" ] && for f in ~/.zsh_completion/*; do \. $f; done
+
+PATH=$PATH:/opt/homebrew/bin/:./node_modules/.bin:/usr/local/bin:/usr/local/go/bin:~/go/bin

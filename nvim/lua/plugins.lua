@@ -20,6 +20,7 @@ return require("packer").startup(function(use)
 		{ "jose-elias-alvarez/null-ls.nvim", requires = { "nvim-lua/plenary.nvim" } },
 
 		"nvim-treesitter/nvim-treesitter",
+		{ "nvim-treesitter/nvim-treesitter-textobjects", requires = { "nvim-treesitter/nvim-treesitter" } },
 
 		"joshdick/onedark.vim",
 		"editorconfig/editorconfig-vim.git",
