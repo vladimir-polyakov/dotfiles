@@ -1,0 +1,12 @@
+require("plugins")
+require("diagnostic")
+require("settings")
+require("mappings")
+require("statusline")
+
+require("plugins/telescope")
+require("plugins/nvim-treesitter")
+require("plugins/dirvish")
+require("plugins/nvim-lsp-installer")
+require("plugins/nvim-lsp")
+require("plugins/null-ls")
