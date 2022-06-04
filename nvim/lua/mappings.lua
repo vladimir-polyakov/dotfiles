@@ -25,4 +25,5 @@ set("n", "<C-j>", ":TmuxNavigateDown<cr>")
 set("n", "<C-k>", ":TmuxNavigateUp<cr>")
 set("n", "<C-l>", ":TmuxNavigateRight<cr>")
 set("n", "<C-\\>", ":TmuxNavigatePrevious<cr>")
+set("n", "Y", "yy")
 

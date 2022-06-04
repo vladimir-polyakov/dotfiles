@@ -20,12 +20,22 @@ local on_attach = function(client, bufnr)
 	set("n", "<leader>e", vim.diagnostic.open_float, opts)
 end
 
--- Suppress diagnostics from LSP reply
---vim.lsp.handlers["textDocument/publishDiagnostics"] = function() end
-
-local servers = { "tsserver", "gopls" }
+local servers = { "gopls" }
 for _, lsp in ipairs(servers) do
 	lspconfig[lsp].setup {
 		on_attach = on_attach,
 	}
 end
+
+lspconfig.tsserver.setup {
+	on_attach = on_attach,
+	settings = {
+		-- https://github.com/microsoft/TypeScript/blob/main/src/compiler/diagnosticMessages.json
+		diagnostics = {
+			ignoredCodes = {
+				7016, -- Could not find a declaration file for module
+				80001, -- File is a CommonJS module; it may be converted to an ES module
+			}
+		}
+	}
+}

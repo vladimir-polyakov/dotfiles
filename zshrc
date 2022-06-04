@@ -38,4 +38,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/etc/bash_completion.d/" ] && for f in /etc/bash_completion.d/*; do \. $f; done
 [ -s "$HOME/.zsh_completion/" ] && for f in ~/.zsh_completion/*; do \. $f; done
 
+# local machine-specific configurations
+[ -s "$HOME/.zsh_local" ] && \. "$HOME/.zsh_local"
+
 PATH=$PATH:/opt/homebrew/bin/:./node_modules/.bin:/usr/local/bin:/usr/local/go/bin:~/go/bin
