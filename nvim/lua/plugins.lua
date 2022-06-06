@@ -10,10 +10,9 @@ return require("packer").startup(function(use)
 
 	use {
 		"justinmk/vim-dirvish",
+		"junegunn/fzf.vim",
 
 		"preservim/nerdcommenter",
-
-		{ "nvim-telescope/telescope.nvim", requires = {"nvim-lua/plenary.nvim" } },
 
 		"neovim/nvim-lspconfig",
 		"williamboman/nvim-lsp-installer",

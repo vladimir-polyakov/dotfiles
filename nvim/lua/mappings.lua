@@ -27,3 +27,17 @@ set("n", "<C-l>", ":TmuxNavigateRight<cr>")
 set("n", "<C-\\>", ":TmuxNavigatePrevious<cr>")
 set("n", "Y", "yy")
 
+set("n", "<Leader>l", ":g//#<Left><Left>")
+set("n", "<Leader>q", ":bw<cr>")
+set("c", "<cr>", function()
+	line = vim.fn.getcmdline()
+
+	if line:match("#$") then
+		return "<cr>:"
+	elseif line:match("^ls") or line:match("^files") or line:match("^buffers") then
+		return "<cr>:b "
+	else
+		return "<cr>"
+	end
+end, { expr = true })
+

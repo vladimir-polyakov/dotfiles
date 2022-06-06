@@ -3,7 +3,7 @@ require("settings")
 require("mappings")
 require("statusline")
 
-require("plugins/telescope")
+require("plugins/fzf")
 require("plugins/nvim-treesitter")
 require("plugins/dirvish")
 require("plugins/nvim-lsp-installer")

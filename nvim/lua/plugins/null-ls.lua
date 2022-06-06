@@ -22,7 +22,7 @@ null_ls.setup {
 		if client.resolved_capabilities.document_formatting then
 			vim.keymap.set(
 				"n",
-				"<leader>f",
+				"<Leader>=",
 				function() 
 					local params = util.make_formatting_params({})
 					client.request("textDocument/formatting", params, nil, bufnr) 
