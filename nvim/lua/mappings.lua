@@ -28,7 +28,9 @@ set("n", "<C-\\>", ":TmuxNavigatePrevious<cr>")
 set("n", "Y", "yy")
 
 set("n", "<Leader>l", ":g//#<Left><Left>")
-set("n", "<Leader>q", ":bw<cr>")
+set("n", "<Leader>q", ":bd<cr>")
+set("n", "<Leader>p", ":bN<cr>")
+set("n", "<Leader>n", ":bn<cr>")
 set("c", "<cr>", function()
 	line = vim.fn.getcmdline()
 
