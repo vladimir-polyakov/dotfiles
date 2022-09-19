@@ -13,6 +13,7 @@ return require("packer").startup(function(use)
 		"junegunn/fzf.vim",
 
 		"preservim/nerdcommenter",
+		"justinmk/vim-sneak",
 
 		"neovim/nvim-lspconfig",
 		"williamboman/nvim-lsp-installer",
@@ -21,6 +22,7 @@ return require("packer").startup(function(use)
 		"nvim-treesitter/nvim-treesitter",
 		{ "nvim-treesitter/nvim-treesitter-textobjects", requires = { "nvim-treesitter/nvim-treesitter" } },
 
+		"dracula/vim",
 		"joshdick/onedark.vim",
 		"editorconfig/editorconfig-vim",
 

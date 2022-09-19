@@ -25,7 +25,8 @@ opt.tabstop = 2
 opt.wrap = false
 
 -- Appearance
-vim.cmd("colorscheme onedark")
+vim.cmd("colorscheme dracula")
+--vim.cmd("colorscheme oxocarbon-lua")
 
 opt.background = "dark"
 opt.cursorcolumn = false
@@ -37,9 +38,19 @@ opt.relativenumber = true
 opt.termguicolors = true
 opt.title = false
 
+-- Go to last edit place on buffer open
+vim.cmd([[
+	augroup startup
+		autocmd!
+		autocmd BufReadPost *
+			\ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+			\ |   exe "normal! g`\""
+			\ | endif
+	augroup END
+]])
+
 -- Custom runtime for plugins
 opt.path:append "./node_modules/.bin"
 opt.rtp:append "/opt/homebrew/opt/fzf"
 
 vim.cmd("filetype plugin on")
-
