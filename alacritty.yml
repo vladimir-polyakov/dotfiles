@@ -28,7 +28,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 16
+  size: 14
 
 colors:
   primary:
@@ -156,7 +156,7 @@ colors:
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
-  program: /opt/homebrew/bin/tmux
+  program: /bin/zsh
 
 key_bindings:
   - { key: A,         mods: Alt,       chars: "\x1ba"                       }

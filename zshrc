@@ -37,13 +37,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 [ -s "/etc/bash_completion.d/" ] && for f in /etc/bash_completion.d/*; do \. $f; done
 [ -s ~/.zsh_completion/ ] && for f in ~/.zsh_completion/*; do \. $f; done
+[ -s /usr/local/share/zsh/site-functions ] && for f in /usr/local/share/zsh/site-functions/*; do \. $f; done
 
 # local machine-specific configurations
 [ -s ~/.zsh_local ] && \. ~/.zsh_local
 
 PATH=$PATH:/opt/homebrew/bin/:./node_modules/.bin:/usr/local/bin:/usr/local/go/bin:~/go/bin
 
-export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -p .gitignore -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
 

@@ -44,4 +44,3 @@ set("c", "<cr>", function()
 		return "<cr>"
 	end
 end, { expr = true })
-

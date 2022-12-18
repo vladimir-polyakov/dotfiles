@@ -13,9 +13,9 @@ opt.splitright = true
 opt.swapfile = false
 
 -- Completion
-opt.completeopt = "preview,menuone,noselect"
-opt.wildmenu = true
-vim.cmd("autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif")
+opt.completeopt = { "menu", "menuone", "noselect" }
+--opt.wildmenu = true
+--vim.cmd("autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif")
 
 -- Indenting
 opt.shiftwidth = 2
@@ -26,7 +26,6 @@ opt.wrap = false
 
 -- Appearance
 vim.cmd("colorscheme dracula")
---vim.cmd("colorscheme oxocarbon-lua")
 
 opt.background = "dark"
 opt.cursorcolumn = false
@@ -37,6 +36,9 @@ opt.number = true
 opt.relativenumber = true
 opt.termguicolors = true
 opt.title = false
+
+-- Sessions
+opt.sessionoptions:append "globals"
 
 -- Go to last edit place on buffer open
 vim.cmd([[
@@ -54,3 +56,7 @@ opt.path:append "./node_modules/.bin"
 opt.rtp:append "/opt/homebrew/opt/fzf"
 
 vim.cmd("filetype plugin on")
+
+if vim.env.VIM_PATH ~= nil and vim.env.VIM_PATH ~= '' then
+  vim.env.PATH = vim.env.VIM_PATH
+end
