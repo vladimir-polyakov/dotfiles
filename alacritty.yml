@@ -30,45 +30,121 @@ font:
   # Point size
   size: 14
 
-# Colors (One Dark)
 colors:
-  # Default colors
   primary:
-    foreground: '0xabb2bf'
-    background: '0x282c34'
-
-  # Cursor colors
+    background: '#282a36'
+    foreground: '#f8f8f2'
+    bright_foreground: '#ffffff'
   cursor:
-    text: '0x2c323c'
-    cursor: '0x5c6370'
-
-  # Selection colors
+    text: CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  search:
+    matches:
+      foreground: '#44475a'
+      background: '#50fa7b'
+    focused_match:
+      foreground: '#44475a'
+      background: '#ffb86c'
+  footer_bar:
+    background: '#282a36'
+    foreground: '#f8f8f2'
+  hints:
+    start:
+      foreground: '#282a36'
+      background: '#f1fa8c'
+    end:
+      foreground: '#f1fa8c'
+      background: '#282a36'
+  line_indicator:
+    foreground: None
+    background: None
   selection:
     text: CellForeground
-    background: '0x3e4452'
-
-  # Normal colors
+    background: '#44475a'
   normal:
-    black:   '0x2c323c'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xe5c07b'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0x5c6370'
-
-  # Bright colors
+    black: '#21222c'
+    red: '#ff5555'
+    green: '#50fa7b'
+    yellow: '#f1fa8c'
+    blue: '#bd93f9'
+    magenta: '#ff79c6'
+    cyan: '#8be9fd'
+    white: '#f8f8f2'
   bright:
-    black:   '0x3e4452'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xe5c07b'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xabb2bf'
+    black: '#6272a4'
+    red: '#ff6e6e'
+    green: '#69ff94'
+    yellow: '#ffffa5'
+    blue: '#d6acff'
+    magenta: '#ff92df'
+    cyan: '#a4ffff'
+    white: '#ffffff'
+# Colors (One Dark)
+#colors:
+  ## Default colors
+  #primary:
+    #foreground: '#f2f4f8'
+    #background: '#161616'
 
+  ## Cursor colors
+  #cursor:
+    #text: '0x2c323c'
+    #cursor: '0x5c6370'
+
+  ## Selection colors
+  #selection:
+    #text: CellForeground
+    #background: '0x3e4452'
+
+  ## Normal colors
+  #normal:
+    #black:   '#131313'
+    #red:     '#ee5396'
+    #green:   '#42be65'
+    #yellow:  '0xe5c07b'
+    #blue:    '#33b1ff'
+    #magenta: '#ee5396'
+    #cyan:    '#33b1ff'
+    #white:   '#ffffff'
+
+  #primary:
+    #foreground: '0xabb2bf'
+    #background: '0x282c34'
+
+  ## Cursor colors
+  #cursor:
+    #text: '0x2c323c'
+    #cursor: '0x5c6370'
+
+  ## Selection colors
+  #selection:
+    #text: CellForeground
+    #background: '0x3e4452'
+
+  ## Normal colors
+  #normal:
+    #black:   '0x2c323c'
+    #red:     '0xe06c75'
+    #green:   '0x98c379'
+    #yellow:  '0xe5c07b'
+    #blue:    '0x61afef'
+    #magenta: '0xc678dd'
+    #cyan:    '0x56b6c2'
+    #white:   '0x5c6370'
+
+  ## Bright colors
+  #bright:
+    #black:   '0x3e4452'
+    #red:     '0xe06c75'
+    #green:   '0x98c379'
+    #yellow:  '0xe5c07b'
+    #blue:    '0x61afef'
+    #magenta: '0xc678dd'
+    #cyan:    '0x56b6c2'
+    #white:   '0xabb2bf'
 # Shell
 #
 # You can set `shell.program` to the path of your favorite shell, e.g.
@@ -80,7 +156,7 @@ colors:
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
-  program: /opt/homebrew/bin/tmux
+  program: /bin/zsh
 
 key_bindings:
   - { key: A,         mods: Alt,       chars: "\x1ba"                       }

@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+
 local opt = vim.opt
 
 opt.backspace = "indent,eol,start"
@@ -11,9 +13,7 @@ opt.splitright = true
 opt.swapfile = false
 
 -- Completion
-opt.completeopt = "preview,menuone,noselect"
-opt.wildmenu = true
-vim.cmd("autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif")
+opt.completeopt = { "menu", "menuone", "noselect" }
 
 -- Indenting
 opt.shiftwidth = 2
@@ -23,7 +23,7 @@ opt.tabstop = 2
 opt.wrap = false
 
 -- Appearance
-vim.cmd("colorscheme onedark")
+vim.cmd("colorscheme dracula")
 
 opt.background = "dark"
 opt.cursorcolumn = false
@@ -35,9 +35,26 @@ opt.relativenumber = true
 opt.termguicolors = true
 opt.title = false
 
+-- Sessions
+opt.sessionoptions:append "globals"
+
+-- Go to last edit place on buffer open
+vim.cmd([[
+	augroup startup
+		autocmd!
+		autocmd BufReadPost *
+			\ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
+			\ |   exe "normal! g`\""
+			\ | endif
+	augroup END
+]])
+
 -- Custom runtime for plugins
 opt.path:append "./node_modules/.bin"
 opt.rtp:append "/opt/homebrew/opt/fzf"
 
 vim.cmd("filetype plugin on")
 
+if vim.env.VIM_PATH ~= nil and vim.env.VIM_PATH ~= '' then
+  vim.env.PATH = vim.env.VIM_PATH
+end

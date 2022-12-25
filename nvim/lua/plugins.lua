@@ -10,22 +10,30 @@ return require("packer").startup(function(use)
 
 	use {
 		"justinmk/vim-dirvish",
+		"junegunn/fzf.vim",
 
 		"preservim/nerdcommenter",
-
-		{ "nvim-telescope/telescope.nvim", requires = {"nvim-lua/plenary.nvim" } },
+		"justinmk/vim-sneak",
 
 		"neovim/nvim-lspconfig",
 		"williamboman/nvim-lsp-installer",
-		{ "jose-elias-alvarez/null-ls.nvim", requires = { "nvim-lua/plenary.nvim" } },
 
-		"nvim-treesitter/nvim-treesitter",
+		{ "nvim-treesitter/nvim-treesitter" },
 		{ "nvim-treesitter/nvim-treesitter-textobjects", requires = { "nvim-treesitter/nvim-treesitter" } },
 
-		"joshdick/onedark.vim",
+		"dracula/vim",
 		"editorconfig/editorconfig-vim",
 
 		"christoomey/vim-tmux-navigator",
+
+		"solarnz/thrift.vim",
+
+		"hrsh7th/cmp-nvim-lsp",
+		"hrsh7th/cmp-buffer",
+		"hrsh7th/nvim-cmp",
+
+		'SirVer/ultisnips',
+		'quangnguyen30192/cmp-nvim-ultisnips'
 	}
 
 	if packer_bootstrap then
