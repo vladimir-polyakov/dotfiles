@@ -14,8 +14,6 @@ opt.swapfile = false
 
 -- Completion
 opt.completeopt = { "menu", "menuone", "noselect" }
---opt.wildmenu = true
---vim.cmd("autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif")
 
 -- Indenting
 opt.shiftwidth = 2
