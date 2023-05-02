@@ -35,6 +35,10 @@ opt.relativenumber = true
 opt.termguicolors = true
 opt.title = false
 
+-- Spell checking
+opt.spell = true
+opt.spelllang = "en,cjk"
+
 -- Sessions
 opt.sessionoptions:append "globals"
 

@@ -24,7 +24,10 @@ local on_attach = function(client, bufnr)
 	local opts, set = { buffer = bufnr }, vim.keymap.set
 
 	set("n", "gd", vim.lsp.buf.definition, opts)
+	set("n", "gvd", ":vsplit | lua vim.lsp.buf.definition()<cr>", opts)
 	set("n", "gD", vim.lsp.buf.type_definition, opts)
+	set("n", "gvD", ":vsplit | lua vim.lsp.buf.type_definition()<cr>", opts)
+
 	set("n", "gr", vim.lsp.buf.references, opts)
 	set("n", "gi", vim.lsp.buf.implementation, opts)
 	set("n", "K", vim.lsp.buf.hover, opts)
@@ -42,8 +45,8 @@ local on_attach = function(client, bufnr)
 	set("n", "]d", vim.diagnostic.goto_next, opts)
 
 	set("n", "<leader>=", function()
-		organizeImport(3000)
-		vim.lsp.buf.formatting_sync(nil, 3000)
+		organizeImport(8000)
+		vim.lsp.buf.format(nil, 8000)
 	end, opts)
 end
 

@@ -15,6 +15,8 @@ return require("packer").startup(function(use)
 		"preservim/nerdcommenter",
 		"justinmk/vim-sneak",
 
+		"rhysd/git-messenger.vim",
+
 		"neovim/nvim-lspconfig",
 		"williamboman/nvim-lsp-installer",
 
@@ -22,7 +24,9 @@ return require("packer").startup(function(use)
 		{ "nvim-treesitter/nvim-treesitter-textobjects", requires = { "nvim-treesitter/nvim-treesitter" } },
 
 		"dracula/vim",
+		"joshdick/onedark.vim",
 		"editorconfig/editorconfig-vim",
+		"yssl/QFEnter",
 
 		"christoomey/vim-tmux-navigator",
 
