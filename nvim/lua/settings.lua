@@ -23,9 +23,8 @@ opt.tabstop = 2
 opt.wrap = false
 
 -- Appearance
-vim.cmd("colorscheme dracula")
+vim.cmd.colorscheme("dracula")
 
-opt.background = "dark"
 opt.cursorcolumn = false
 opt.cursorline = true
 opt.list = true
@@ -56,8 +55,6 @@ vim.cmd([[
 -- Custom runtime for plugins
 opt.path:append "./node_modules/.bin"
 opt.rtp:append "/opt/homebrew/opt/fzf"
-
-vim.cmd("filetype plugin on")
 
 if vim.env.VIM_PATH ~= nil and vim.env.VIM_PATH ~= '' then
   vim.env.PATH = vim.env.VIM_PATH

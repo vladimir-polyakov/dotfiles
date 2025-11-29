@@ -1,10 +1,11 @@
 local status_ok, nvim_treesitter = pcall(require, "nvim-treesitter.configs")
 if not status_ok then
+	vim.notify("Failed to load nvim_treesitter.configs: " .. nvim_treesitter, vim.log.levels.ERROR)
 	return
 end
 
 nvim_treesitter.setup {
-	ensure_installed = { "javascript", "go", "vim", "lua", "json", "bash", "typescript", "dockerfile" },
+	ensure_installed = { "javascript", "go", "vim", "lua", "json", "bash", "typescript", "dockerfile", "vimdoc", "java" },
 
 	sync_install = false,
 
@@ -20,15 +21,8 @@ nvim_treesitter.setup {
 			keymaps = {
 				["af"] = "@function.outer",
 				["if"] = "@function.inner",
-			},
-		},
-		swap = {
-			enable = true,
-			swap_next = {
-				["<Leader>a"] = "@parameter.inner",
-			},
-			swap_previous = {
-				["<Leader>A"] = "@parameter.inner",
+				["ap"] = "@parameter.outer",
+				["ip"] = "@parameter.inner",
 			},
 		},
 		move = {
@@ -37,14 +31,8 @@ nvim_treesitter.setup {
 			goto_next_start = {
 				["]m"] = "@function.outer",
 			},
-			goto_next_end = {
-				["]M"] = "@function.outer",
-			},
 			goto_previous_start = {
 				["[m"] = "@function.outer",
-			},
-			goto_previous_end = {
-				["[M"] = "@function.outer",
 			},
 		},
 	},
