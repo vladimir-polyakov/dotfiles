@@ -24,3 +24,6 @@ set("n", "<C-\\>", ":TmuxNavigatePrevious<cr>")
 set("n", "<Leader>q", ":bd<cr>")
 set("n", "<Leader>j", ":bN<cr>")
 set("n", "<Leader>k", ":bn<cr>")
+
+set("n", "<leader>cc", "<plug>NERDCommenterToggle")
+set("v", "<leader>cc", "<plug>NERDCommenterToggle")

@@ -11,6 +11,8 @@ return require('packer').startup(function(use)
 
 	use {
 		'justinmk/vim-dirvish',
+		'junegunn/fzf',
+
 		'junegunn/fzf.vim',
 		'vimwiki/vimwiki',
 

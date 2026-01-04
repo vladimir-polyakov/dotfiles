@@ -12,6 +12,7 @@ local function on_attach_setup(client, bufnr)
 	set("n", "gi", vim.lsp.buf.implementation, opts)
 	set("n", "K", vim.lsp.buf.hover, opts)
 	set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+	set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
 
 	set("n", "<leader>aa", vim.diagnostic.setqflist, opts)
 	set("n", "<leader>ae", function()

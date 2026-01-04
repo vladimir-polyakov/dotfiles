@@ -1,5 +1,8 @@
 vim.g.mapleader = " "
 
+-- Disable nerdcommenter default mappings
+vim.g.NERDCreateDefaultMappings = 0
+
 local opt = vim.opt
 
 opt.backspace = "indent,eol,start"
@@ -11,6 +14,9 @@ opt.scrolloff = 10
 opt.splitbelow = true
 opt.splitright = true
 opt.swapfile = false
+
+-- Auto-reload files when changed outside of Vim
+opt.autoread = true
 
 -- Completion
 opt.completeopt = { "menu", "menuone", "noselect" }
@@ -49,6 +55,15 @@ vim.cmd([[
 			\ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
 			\ |   exe "normal! g`\""
 			\ | endif
+	augroup END
+]])
+
+-- Auto-reload on external changes
+vim.cmd([[
+	augroup autoread
+		autocmd!
+		autocmd CursorHold,CursorHoldI * checktime
+		autocmd FocusGained,BufEnter * checktime
 	augroup END
 ]])
 
